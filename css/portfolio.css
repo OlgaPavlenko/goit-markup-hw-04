@@ -1,0 +1,113 @@
+:root {
+    --accent-color: #2196F3;
+    --basic-color: #212121;
+    --text-color: #757575;
+    --contacts-footer-color: rgba(255, 255, 255, 0.6);
+    --primary-color-white: #FFFFFF;
+    --bcg-color: #F5F4FA;
+    --footer-copiright: rgba(255, 255, 255, 0.4);
+}
+
+a{
+    display: block;
+}
+
+.filter__elem {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  letter-spacing: 0.03em;
+  line-height: 1.62;
+}
+
+
+.button .portfolio{
+    padding: 0;
+    background-color: var(--bcg-color);
+    color: var(--basic-color);
+}
+
+.portfolio{
+    
+    background-color: var(--bcg-color);
+    color: var(--basic-color);
+}
+
+.button.portfolio:hover{
+    background-color: var(--accent-color);
+    color: var(--primary-color-white);
+}
+
+.button.portfolio:focus{
+    background-color: var(--accent-color);  
+    color: var(--primary-color-white);
+}
+
+.filter {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.filter-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-item .item  {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px; 
+  }
+
+.filter-item .item:nth-child(3n)  {
+  margin-right: 0px; 
+}
+
+.filter-item .item {
+    margin-bottom: 30px;
+}
+
+.card-content{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;  
+    } 
+
+.project{
+    margin-bottom: 4px;
+    text-align: left;
+    color: var(--basic-color);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    }
+
+    .work{
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    }
+    
+
+.project-descr{
+    display: none;
+    color: var(--primary-color-white);
+    font-size: 18px;
+    line-height: 1.56;
+}
+
+
+
