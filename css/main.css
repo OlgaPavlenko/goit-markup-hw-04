@@ -6,6 +6,7 @@
     --primary-color-white: #FFFFFF;
     --bcg-color: #F5F4FA;
     --footer-copiright: rgba(255, 255, 255, 0.4);
+    --icon-fill: #AFB1B8;
 }
 
 *, ::after, ::before{
@@ -113,11 +114,19 @@ p{
     color: var(--text-color);
 }
 
+.icon{
+margin-right: 10px;
+fill: currentColor;
+}
+
 .hero{
     padding-top: 200px;
     text-align: center;
     background-color: gray;
     padding-bottom: 210px;
+    background-image: url(../images/main/header_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .order{
@@ -191,7 +200,7 @@ h3{
 
 .advantages-elem{
     text-align: left;
-    min-width: 278px;
+    min-width: 270px;
 }
 
 .advantages-elem:nth-child(3n+1){
@@ -200,6 +209,16 @@ h3{
 
 .advantages-elem:not(:last-child){
     margin-right: 29px;
+}
+
+.advantages-border{
+    background: var(--bcg-color);
+    padding: 25px 100px 25px 100px;
+    border-radius: 4px;
+}
+
+.icon-elem{
+
 }
 
 .wedo{
@@ -251,6 +270,7 @@ padding-bottom: 94px;
 .team-list .item{
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .team-list .item:last-child{
@@ -267,8 +287,49 @@ padding-bottom: 94px;
 }
 
 .name-description{
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
+}
+
+.link-elems{
+    margin-right: 10px;
+    width: calc((100% - 30px) / 4);
+}
+
+.link-elems .social-network:last-child{
+    margin-right: 0px;
+}
+
+.social-network{
+    display: flex;
+    color: var(--icon-fill);
+    
+}
+
+/* .network {
+    min-width: 44px;
+} */
+
+.social-network:hover{
+    background-color: var(--accent-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--primary-color-white);
+    text-align: center;
+    align-items: center;
+}
+
+.icon-network{
+    fill: currentColor;   
+}
+
+.social-links{
+    display: flex;
+    margin-bottom: 24px;
+    padding-right: 32px;
+    padding-left: 32px;
 }
 
 .clients {
@@ -287,6 +348,49 @@ padding-bottom: 94px;
 
 .clients-list .item + .item{
     margin-left: 30px;
+}
+
+.btn-client{
+    color: var(--icon-fill);
+    border: 1px solid var(--icon-fill);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.client-wrapper{
+    min-width: 170px;
+}
+
+.btn-client:hover{
+    border-color: var(--accent-color);
+}
+
+.btn-client .client1{
+    padding: 20px 62.73px 20.77px 63px;
+}
+
+.btn-client .client2{
+    padding: 19px 65px 19px 65px;
+}
+
+.btn-client .client3{
+    padding: 24px 64px 23.4px 65px;
+}
+
+.btn-client .client4{
+    padding: 24px 45.34px 23.98px 45px;
+}
+
+.btn-client .client5{
+    padding: 22px 55px 21px 56px;
+}
+
+.btn-client .client6{
+    padding: 22px 40.52px 22.56px 41px;
+}
+
+.icon-client{
+    fill: currentColor;
 }
 
 .footer{
