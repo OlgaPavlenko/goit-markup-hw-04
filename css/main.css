@@ -77,6 +77,12 @@ padding-bottom: 32px;
     margin-right: 50px;
 }
 
+.header-contact .mail,
+.header-contact .phone{
+    display: flex;
+    align-items: center;
+}
+
 .header-contact .item:not(:last-child){
     margin-right: 50px;
 }
@@ -120,13 +126,21 @@ fill: currentColor;
 }
 
 .hero{
+    max-width: 1600px;
+    height: 600px;
     padding-top: 200px;
     text-align: center;
     background-color: gray;
     padding-bottom: 210px;
-    background-image: url(../images/main/header_img.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/main/header_img.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+{
+    
+    background: rgba(47, 48, 58, 0.8);
 }
 
 .order{
@@ -303,23 +317,24 @@ padding-bottom: 94px;
 
 .social-network{
     display: flex;
+    padding: 0;
+    margin: 0;
     color: var(--icon-fill);
-    
-}
-
-/* .network {
-    min-width: 44px;
-} */
-
-.social-network:hover{
-    background-color: var(--accent-color);
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: var(--primary-color-white);
-    text-align: center;
     align-items: center;
+    justify-content: center;
 }
+
+.network{
+    max-height: 22px;
+}
+
+.social-network:hover{
+    background-color: var(--accent-color);
+    color: var(--primary-color-white);
+}  
 
 .icon-network{
     fill: currentColor;   
@@ -330,6 +345,7 @@ padding-bottom: 94px;
     margin-bottom: 24px;
     padding-right: 32px;
     padding-left: 32px;
+    
 }
 
 .clients {
@@ -440,6 +456,25 @@ padding-bottom: 94px;
 b{
     color: var(--primary-color-white);
     text-transform: uppercase;
+}
+
+.footer-join{
+    padding-bottom: 21px;
+}
+
+.join .social-links{
+ padding-left: 0px;
+ margin-bottom: 0px;
+ 
+}
+
+.join .link-elems{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.join .social-network {
+    color: var(--primary-color-white);
 }
 
 .button{
