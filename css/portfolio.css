@@ -102,12 +102,34 @@ a{
     line-height: 1.87;
     }
     
+ .product{
+     position: relative;
+ }   
+
+ .product:hover{
+     opacity: 1;
+ }
+
+ .product::before{
+     /* display: inline-block; */
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    
+    opacity: 0;
+} 
 
 .project-descr{
-    display: none;
     color: var(--primary-color-white);
     font-size: 18px;
     line-height: 1.56;
+    position: absolute;
+    bottom: 25%;
+
+    opacity: 0;
+
 }
 
 
